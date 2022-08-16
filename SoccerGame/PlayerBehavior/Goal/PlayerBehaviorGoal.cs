@@ -10,16 +10,18 @@ namespace SoccerGame
 {
     public class PlayerBehaviorGoal : IGoalBehavior
     {
-        Random _rnd = new Random();
+      
 
         private double _passPercentage;
         public bool Goal(List<double> skillKit)
         {
+            var randomValue = Player.random.NextDouble();
             for (int i = 0; i < skillKit.Count; i++)
             {
+                
                 double listData = skillKit[i];
-                listData = _rnd.Next(50, 101);
-                _passPercentage = listData * _rnd.NextDouble();
+                listData = Player.random.Next(50, 101);
+                _passPercentage = listData * randomValue;
 
             }
             Console.WriteLine(_passPercentage);

@@ -14,7 +14,7 @@ namespace SoccerGame
 
 
         public List<double> SkillKit;
-        public Random random = new Random();
+        public static Random random = new Random();
 
         protected string _name;
         protected int _formNumber;

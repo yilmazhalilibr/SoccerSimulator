@@ -8,6 +8,8 @@ namespace SoccerGame.PlayerBehavior
 {
     public interface IPassBehavior
     {
+        
         bool Pass(List<double> skillKit);
+        
     }
 }
