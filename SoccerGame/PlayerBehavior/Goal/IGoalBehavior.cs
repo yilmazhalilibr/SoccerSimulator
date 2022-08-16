@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SoccerGame
+namespace SoccerGame.PlayerBehavior
 {
-    public interface IPlayerBehavior
+    public interface IGoalBehavior
     {
-        bool Pass();
-        bool GoalShot();
+        bool Goal(List<double> skillKit);
     }
 }
